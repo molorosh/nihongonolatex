@@ -1,0 +1,92 @@
+% filename: kanji_commands.tex
+
+\usepackage{xeCJK}
+\setCJKmainfont{Hiragino Mincho Pro}
+\usepackage{tikz}
+% characters with big height and depth
+% to give different boxes the same vertical size
+\newcommand{\vsizecorrectorhira}{\vphantom{もりぼゃ}}% epkyouka, HanaMinA
+\newcommand{\vsizecorrectorkanji}{\vphantom{$\vert$}}
+
+% commands for setting furigana above kanji
+\newcommand{\fg}[2]{% #1: kanji, #2: furigana
+    %\unskip
+    \begin{tikzpicture}[baseline=(kanji.base)]
+        \node(kanji)[
+            inner sep=0,
+        ] {
+            \vsizecorrectorkanji%
+            #1%
+        };
+        \node(furigana)[
+            above of=kanji,
+            node distance=1em,
+            inner sep=0,
+        ] {%
+            \tiny%
+            \vsizecorrectorhira%
+            #2%
+        };
+    \end{tikzpicture}%
+    %\ignorespaces
+}
+
+
+% commands for setting furigana BELOW kanji
+\newcommand{\fgB}[2]{% #1: kanji, #2: furigana
+    %\unskip
+    \begin{tikzpicture}[baseline=(kanji.base)]
+        \node(kanji)[
+            inner sep=0,
+        ] {
+            \vsizecorrectorkanji%
+            #1%
+        };
+        \node(furigana)[
+            below of=kanji,
+            node distance=1em-2pt,
+            inner sep=0,
+        ] {%
+            \tiny%
+            \vsizecorrectorhira%
+            #2%
+        };
+    \end{tikzpicture}%
+    %\ignorespaces
+}
+
+\newcommand{\fgAB}[3]{% #1: kanji, #2: furigana above, #3: furigana below
+    %\unskip
+    \begin{tikzpicture}[baseline=(kanji.base)]
+        \node(kanji)[
+            inner sep=0,
+        ] {
+            \vsizecorrectorkanji%
+            #1%
+        };
+        \node(furigana-above)[
+            above of=kanji,
+            node distance=1em,
+            inner sep=0,
+        ] {%
+            \tiny%
+            \vsizecorrectorhira%
+            #2%
+        };
+        \node(furigana-below)[
+            below of=kanji,
+            node distance=1em-2pt,
+            inner sep=0,
+        ] {%
+            \tiny%
+            \vsizecorrectorhira%
+            #3%
+        };
+    \end{tikzpicture}%
+    %\ignorespaces
+}
+
+\newcommand{\?}{
+\symbol{"EB08}
+}
+
