@@ -1,0 +1,76 @@
+% run as XeLaTeX
+%!TEX TS-program = xelatex
+\documentclass[44pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{a4paper}                   		% ... or a4paper or a5paper or letterpaper or... 
+%\geometry{landscape}                		% Activate for rotated page geometry
+\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex	
+
+\usepackage{hyperref}				% enabled hyperlink support	
+%\usepackage{amssymb}
+
+\input{commands/kanjicommands}
+
+\title{Brief Article}
+\author{The Author}
+\date{}	
+						% Activate to display a given date or no date
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%\maketitle
+%\section{}
+%\subsection{}
+
+This document uses TikZ for furigana support.  It is based on 
+\href{https://tex.stackexchange.com/questions/95729/typesetting-furigana-above-and-below-original-text}{this tex.stackexchange.com question}
+
+
+sdfgsdfg dfgdg some basic japanese text
+私は日本語の勉強します! 
+lksjdflkg
+
+⓿
+
+Japanese uses different alphabets, one of those is \fg{漢字}{かんじ} (Kanji).
+
+Japanese uses different alphabets, one of those is \fgB{漢字}{かんじ} (Kanji) and this time the furigana is below the text.
+
+Kanji can have different readings: \fgAB{日}{にち}{ひ}.   [.  \?  ]
+
+Conversation Cues
+
+会話 / かいわ \symbol{"00D7} \symbol{"203B} \symbol{"EB08}
+
+Beyond just talking and listening, a typical conversation has some special purpose phrases.
+
+Phatics - words (or just noises) to indicate that you are you haven't finished speaking yet (even it you have temporarily stopped talking).  In English this is things like: "um..." and "er..." and "like..." ... 
+
+Backchanelling - small responses to indicate you are still listening, but don't intend to take over the conversation yet.  In English this is things like: 'Oh?', "Really?", "uhuh", "uuh?", "wow", 'yeah', 'I see', "no way"
+
+Questions - small sentences to get more detailed information from the speaker (based on what they were saying)
+
+Asking for translation assistance in Japanese.
+
+If you are talking to a Japanese person who is also fluent in English, it is useful to be able to ask a few translation questions like: "How to you say APPLE in Japanese?" or "What does RINGO mean in English".
+
+One of the key words is \fg{意味}{いみ} which means: "meaning" or "linguistic definition"
+
+What does \?{} mean?
+
+\?{}はどういう意味ですか。
+
+\?{} is the meaning.
+
+\?{}はという意味です。
+
+
+
+Mental Block: When you just can't think of the word!
+
+%this form of \href uses \nolinkrurl to allow it to handle line-breaks better
+\href{mailto:molorosh@gmail.com}{\nolinkurl{molorosh@gmail.com} }
+
+
+\end{document}  
