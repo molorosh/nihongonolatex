@@ -2,7 +2,7 @@
 %!TEX TS-program = xelatex
 \documentclass[44pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
 \usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
-\geometry{a4paper}                   		% ... or a4paper or a5paper or letterpaper or... 
+\geometry{a4paper, margin=0.8in}                   		% ... or a4paper or a5paper or letterpaper or... 
 %\geometry{landscape}                		% Activate for rotated page geometry
 \usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
 \usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
@@ -11,21 +11,29 @@
 \usepackage{hyperref}				% enabled hyperlink support	
 %\usepackage{amssymb}
 
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+    
 \input{../commands/kanjicommands}
 
-\title{Japanese Intermediate 1}
-\date{ \fgdate{2022}{10}{4}{よっか} }
+\title{\vspace{-2.0cm}Japanese Intermediate 1}
+\date{\vspace{-1.0cm}\fgdate{2022}{10}{4}{よっか} }
 
-\newcommand{\TUG}{\TeX\ Users Group}
-
-						% Activate to display a given date or no date
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 
 \maketitle{}
 
+\href{https://padlet.com/coachingteam/2806zrpg7nt2okgi}{PADLETのハイパーリンク}
+
 % we use \protect for fragile (parameterised) commands that may get moved to other places in the document (e.g. section -> table of contents)
-\section*{\protect \fg{漢字}{かんじ}や\fg{単語}{たんご} (kanji and vocab)}
+\section*{\protect \fg{漢字}{かんじ}や\fg{単語}{たんご}。(kanji and vocab)}
 
 \begin{tabular}{l l l }
 
@@ -33,13 +41,13 @@
 
 \end{tabular}
 
-\section*{\protect \fg{文法}{ぶんぽう} (grammar)}
-
-V-ていました。/ V-ていましたか。
+\section*{\protect \fg{文法}{ぶんぽう}。(grammar)}
 
 \subsection*{\protect Continuing action in the past (again)}
 
-\fg{昨日}{きのう}、\fg{公演}{こうえん}でどうしていましたか。（What were you doing in the park yesterday?）
+V-ていました。/ V-ていましたか。
+
+\fg{昨日}{きのう}、\fg{公園}{こうえん}でどうしていましたか。（What were you doing in the park yesterday?）
 
 \subsection*{\protect V-\fg{可能系}{かのうけい}とて (potential form + てform)}
 
@@ -49,7 +57,31 @@ V-（られ）て、＿＿＿＿ 。/ V-（られ）なくて、＿＿＿＿ 。
 
 \fg{友達}{ともだち}に、\fg{会}{あ}えなくて、\fg{残念}{ざんねん}でした。（It was disappointing that I wasn't able to meet my friends.）
 
-\section*{\protect \fg{質問}{しつもん}で\fg{会話}{かいわ}の\fg{燃焼}{れんしゅう}することについては。 (about conversation practise with questions)}
+\section*{\protect \fg{質問}{しつもん}で\fg{会話}{かいわ}の\fg{燃焼}{れんしゅう}することについては。(conversation question practise)}
+
+Example questions (\textit{with no particular theme}):
+
+\fg{暗殺者}{あんさつしゃ}になることは\fg{如何}{どう}でしたか。（How did you become an assassin?）
+
+これは\fg{誰}{だれ}のナイフですか。（Whose knife is this?）
+
+だれと\fg{刑務所}{けいむしょ}に\fg{行}{い}きますか。（Who are you going to prison with?）
+
+どんなナイフが\fg{一番}{いちばん}\fg{好}{す}きですか。（what is your favourite type of knife?）
+
+どうしてリトアニアに\fg{行}{い}きましたか。（Why did you go to Lithuania?）
+
+\fg{昨日}{きのう}、\fg{実験所}{じっけんしょ}でどうしていましたか。（What were you doing in the research facility yesterday?）
+
+\fg{警官}{けいかん}はどこにいりますか。（Where are the police officers?）
+
+オリエント\fg{急行}{きゅうこう}は\fg{何時}{なんじ}にイスタンブールに\fg{着}{つ}きますか。（What time does the Orient Express reach Istanbul?）
+
+\fg{李}{すもも}\fg{先生}{せんせい}はいつ\fg{死}{し}にましたか。（When did Professor Plum die?）
+
+
+
+
 
 
 
